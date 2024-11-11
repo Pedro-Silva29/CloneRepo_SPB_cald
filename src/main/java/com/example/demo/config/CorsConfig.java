@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Permite acesso a todas as rotas
-                .allowedOrigins("https://clone-repo-spb-front.vercel.app/") // URL do seu frontend
+                .allowedOrigins("https://clone-repo-spb-front.vercel.app") // URL do seu frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH") // Métodos permitidos
                 .allowedHeaders("*") // Permite todos os cabeçalhos
                 .allowCredentials(true); // Se você precisa enviar cookies ou credenciais
